@@ -1,4 +1,5 @@
-blog
+Abstract Classes
 ====
 
-Code Things
+An example of how to make an abstract class with objective-c
+
