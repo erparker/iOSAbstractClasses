@@ -4,10 +4,10 @@ Abstract Classes
 You'll notice that this is not a true abstract class as defined in other languages. This is meant to give a simple implementation of an abstract class for those cases where an abstract type could come in handy.
 An example of how to make an abstract class with objective-c.
 
------------
-BaseClass.h
------------
 
+BaseClass.h
+
+```
 @protocol BaseClassDelegate <NSObject>
 
 @required
@@ -25,11 +25,11 @@ BaseClass.h
 - (void)commonMethod;
 
 @end
+```
 
------------
 BaseClass.m
------------
 
+```
 #import "BaseClass.h"
 
 @implementation BaseClass
@@ -39,16 +39,15 @@ BaseClass.m
 }
 
 @end
-
+```
 
 ------------
-************
-------------
 
------------
+
+
 Subclass1.h
------------
 
+```
 #import "BaseClass.h"
 
 @interface Subclass1 : BaseClass <BaseClassDelegate>
@@ -59,11 +58,12 @@ Subclass1.h
 - (void)method3;
 
 @end
+```
 
------------
+
 Sublcass1.m
------------
 
+```
 #import "Subclass1.h"
 
 @implementation Subclass1
@@ -90,17 +90,16 @@ Sublcass1.m
 }
 
 @end
-
-
------------
-***********
------------
-
+```
 
 -----------
+
+
+
+
 Sublcass2.h
------------
 
+```
 #import "BaseClass.h"
 
 @interface Subclass2 : BaseClass <BaseClassDelegate>
@@ -109,11 +108,12 @@ Sublcass2.h
 - (id)method2;
 
 @end
+```
 
------------
+
 Subclass2.m
------------
 
+```
 #import "Subclass2.h"
 
 @implementation Subclass2
@@ -136,5 +136,5 @@ Subclass2.m
 }
 
 @end
-
+```
 
