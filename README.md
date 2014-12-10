@@ -7,7 +7,7 @@ An example of how to make an abstract class with objective-c.
 
 BaseClass.h
 
-```
+```objective-c
 @protocol BaseClassDelegate <NSObject>
 
 @required
@@ -29,7 +29,7 @@ BaseClass.h
 
 BaseClass.m
 
-```
+```objective-c
 #import "BaseClass.h"
 
 @implementation BaseClass
@@ -47,7 +47,7 @@ BaseClass.m
 
 Subclass1.h
 
-```
+```objective-c
 #import "BaseClass.h"
 
 @interface Subclass1 : BaseClass <BaseClassDelegate>
@@ -63,7 +63,7 @@ Subclass1.h
 
 Sublcass1.m
 
-```
+```objective-c
 #import "Subclass1.h"
 
 @implementation Subclass1
@@ -99,7 +99,7 @@ Sublcass1.m
 
 Sublcass2.h
 
-```
+```objective-c
 #import "BaseClass.h"
 
 @interface Subclass2 : BaseClass <BaseClassDelegate>
@@ -113,7 +113,7 @@ Sublcass2.h
 
 Subclass2.m
 
-```
+```objective-c
 #import "Subclass2.h"
 
 @implementation Subclass2
