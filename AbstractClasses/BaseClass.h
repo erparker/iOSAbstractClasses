@@ -22,4 +22,6 @@
 
 @property (retain, nonatomic) id<BaseClassDelegate> delegate;
 
+- (void)commonMethod;
+
 @end

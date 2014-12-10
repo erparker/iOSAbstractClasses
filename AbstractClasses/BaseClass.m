@@ -10,4 +10,8 @@
 
 @implementation BaseClass
 
+- (void)commonMethod {
+    //Do the things
+}
+
 @end
