@@ -6,7 +6,7 @@ You'll notice that this is not a true abstract class as defined in other languag
 
 This is meant to give a simple implementation of an abstract class for those cases where an abstract type could come in handy. I did it this way because I wanted a couple UITableViewCell sublcasses that had some shared functionality, but were different enough to warrant their own sublcass. It ended up making my delegate methods much cleaner and easier to maintain.
 
-
+The trick I really wanted to accomplish was calling a method on 2 different subclasses that both return the same type, but whose implementations are different.
 
 
 BaseClass.h
